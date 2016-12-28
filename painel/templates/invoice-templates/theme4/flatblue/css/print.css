@@ -1,0 +1,162 @@
+
+#topnav {
+display: none; }
+
+.overlay-bg,
+.overlay-content {
+display: none;
+}
+
+body {
+font-family: Arial, sans-serif;
+font-size: 9pt !important;
+}
+
+.top {
+color: #454545;
+padding-top: 30px;
+text-align: center;
+padding-bottom: 40px;
+}
+
+
+.hr {
+  height: 0px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f7f5f5;
+  font-size: 1px;
+  width: 50%;
+  padding-top: 12px;
+}
+
+.2hr {
+  height: 0px;
+  border-bottom: 1px solid #f7f5f5;
+  font-size: 1px;
+  width: 200px;
+  padding-top: 12px;
+ }
+ 
+.from {
+padding-left: 20px;
+}
+
+.to {
+padding-left: 80px;
+}
+
+.to,
+.from {
+width: 40%;
+font-size: 12pt;
+line-height: 18pt;
+float: left;
+color: #606060;
+}
+
+h1 {
+font-size: 20pt;
+margin: 0px;
+line-height: 28pt;
+}
+
+h2 {
+font-size: 14pt;
+font-weight: normal;
+}
+
+.transtab td {
+color: #FFF;
+padding: 11px 16px 11px 16px;
+text-align: center;
+}
+
+.sum td{
+font-size: 10pt;
+padding: 6px 0px 6px 0px;
+}
+
+.table-content {
+float: left;
+margin-top: 50px;
+width: 900px;
+margin-left: 30px;
+
+}
+
+table {
+border-spacing:0;
+border-collapse:collapse;
+}
+
+.tab {
+width: 900px;
+margin-bottom: 30px;
+}
+
+.tab th {
+background: #3178b2;
+color: #FFF;
+padding: 15px 10px 15px 10px;
+text-align: left;
+}
+
+.tab td{
+padding: 15px 10px 15px 10px;
+}
+
+.tab tr:nth-child(even) {
+    background-color: #f7f8f8;
+}
+
+
+
+.tfirst {
+width: 35%;
+}
+
+.tsecond {
+width: 10%;
+}
+
+.third {
+width: 15%;
+}
+
+.tforth {
+width: 25%;
+}
+
+.notes {
+width: 400px;
+float: left;
+color: #626262;
+padding: 5px 10px 15px 10px;
+}
+
+.summary {
+width: 350px;
+float: left;
+}
+
+.transaction {
+margin-top: 60px;
+background: #3178b2;
+color: #dadada;
+width: 100%;
+float: left;
+text-align: center;
+height: 95px;
+padding-top: 20px;
+vertical-align: middle;
+}
+
+.footer {
+background: #296698;
+color: #dadada;
+width: 100%;
+float: left;
+text-align: center;
+height: 45px;
+vertical-align: middle;
+}

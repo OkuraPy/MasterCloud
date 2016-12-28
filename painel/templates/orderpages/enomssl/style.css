@@ -1,0 +1,177 @@
+.tpl_nextgen input.styled, .tpl_nextgen select.styled {
+    margin-bottom: 9px!important;
+}
+ul.checkers {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+ul.checkers li {
+background:url("check.png") no-repeat scroll 2px 4px;
+padding:3px 0 3px 25px;
+}
+
+#progress-indicator {
+clear:both;
+overflow:hidden;
+margin-bottom:20px;
+height:40px;
+}
+.progress-el {
+	float:left;
+	border-bottom:solid #f5f5f5 5px;
+	width:169px;
+	margin-right:6px;
+	height:20px;
+	padding:10px 0px 5px 0px;
+	color:#bbbbbb;
+}
+.progress-el a{
+	text-decoration:none;
+	color:#bbbbbb;
+}
+.progress-el a:hover{
+	text-decoration:underline;
+	color:#000000;
+}
+#servers_types {
+	height:200px;
+	width:100%;
+	font-size:12px;
+}
+#csrbox {
+overflow-x:hidden;
+overflow-y:scroll;
+height:200px;
+width:98%;
+font-size:10px;
+}
+
+.progress-last {
+	margin:0px !important;
+	width:169px;
+}
+.progress-active {
+	border-bottom:solid #cccccc 5px !important;
+	color:#000000 !important;
+}
+.progress-done {
+	border-bottom: solid 5px #eaeaea !important;
+	color:#9c9c9c !important;
+}
+.ntable {
+margin-bottom:20px;
+}
+.ntable td {
+	padding:0px;
+}
+.niselected {
+background:#E0ECFF;
+}
+.nitem strong, .clicky {
+cursor:pointer;
+}
+
+.nitem {
+
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 5px; 
+margin-bottom:3px;
+}
+.orderbox1 {
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px; 
+background:url("../../default/img/bg_slide1.gif") repeat-x scroll left top #F0F0F0;
+border:solid 1px #D2D2D2;
+padding:10px !important;
+}
+.orderbox12, .orderbox2.orderbox12 {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; 
+border:solid 1px #D2D2D2 !important;
+background:url("../../default/img/bg_slide1.gif") repeat-x scroll left top #F0F0F0;
+}
+.orderbox2 {
+	-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px; 
+border:solid 1px #D2D2D2;
+
+border-top:none;
+}
+.contacttables td {
+	padding:3px;
+	
+}
+.orderbox3 {
+	padding:10px !important;background:#f0f0f0;
+}
+.csubmit {
+	background:#6c9d2c url("../../default/img/c_submit.gif") repeat-x scroll left top;
+	-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 0px; 
+text-align:center;
+vertical-align:middle;
+}
+.disabled, .csubmit.disabled {
+	background:url("../../default/img/bg_wbox_header.gif") repeat-x scroll left top #E5E5E5;
+}
+.disabled a, .csubmit.disabled a {
+text-shadow:-1px -1px 1px #D2D2D2;
+cursor:default !important;
+}
+.csubmit a {
+text-shadow:1px 1px 1px #3E3E3E;
+color:#FFFFFF !important;
+font-size:20px;
+text-align:right;
+text-decoration:none;}
+
+#right {
+width: 240px;
+float:right;
+}
+#left {
+width:620px;
+float:left;
+}

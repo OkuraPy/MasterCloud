@@ -1,0 +1,177 @@
+/* Pattern from subtlepatterns.com */
+
+body {
+	background: #e3e8eb;
+	font-family: 'Lato', sans-serif;
+	color: #4f4f4f;
+	font-size: 10pt;
+	}
+	
+#topnav {
+width: 960px;
+margin: 0 auto;
+height: 54px;
+margin-top: 40px;
+}
+.toolbar ul {
+            display:table-row;
+        }
+		
+.toolbar ul li
+        {
+    display: table-cell;
+	border: none;
+	color: #9b9b9b;
+    list-style-type: none;
+    vertical-align: middle;
+        }
+		
+.toolbar ul li a {
+   display: block;
+   vertical-align: middle;
+   
+    }
+.toolbar ul li.button a {
+    }
+		
+.toolbar ul li.button a:hover {
+background: #000;
+}
+		
+
+.status {
+width: 169px;
+height: 100%;
+color: #FFF;
+}
+
+
+.Paid,
+.Unpaid,
+.Cancelled,
+.Refunded {
+padding-top: 21px;
+padding-left: 19px;
+padding-bottom: 17px;
+}
+
+.Paid {
+background: url(../img/paid.png) repeat-x;
+}
+
+.Unpaid {
+background: url(../img/unpaid.png) repeat-x;
+}
+
+.Cancelled{
+background: url(../img/cancelled.png) repeat-x;
+}
+
+.Refunded {
+background: url(../img/refunded.png) repeat-x;
+}
+
+.link {
+width: 192px;
+height: 100%;
+border-right: 1px solid #f8f5f5;
+			}
+			
+.link a{
+padding-top: 21px;
+padding-left: 18px;
+background: url(../img/nav.png) repeat-x;
+padding-bottom: 17px;
+color: #9b9b9b;
+}
+
+
+
+.link a:hover {
+background: url(../img/nav2.png) repeat-x;
+-webkit-transition: background 0.2s ease-in-out;
+-moz-transition: background 0.2s ease-in-out;
+-ms-transition: background 0.2s ease-in-out;
+-o-transition: background 0.2s ease-in-out;
+transition: background 0.2s ease-in-out;
+color: #FFF;
+}
+			
+.invoice {
+width: 960px;
+margin: 0 auto;
+background: #FFF;
+margin-top: 10px;
+height: auto;
+overflow: hidden;
+margin-bottom: 50px;
+}
+	
+.toolbar a {
+border: none;
+text-decoration: none;
+}
+
+clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+
+
+.overlay-bg {
+    z-index: 55;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.75);
+}
+    .overlay-content {
+        background: #fff;
+		text-align: left;
+        padding: 1%;
+        width: 40%;
+		line-height: 18pt;
+		font-size: 10pt;
+		color: #444444;
+		padding-left: 20px;
+        position: relative;
+        top: 15%;
+        left: 50%;
+        margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.9);
+    }
+ 
+    .close-btn {
+        cursor: pointer;
+        border: 1px solid #5e5e5e;
+        padding: 2% 5%;
+		color: #FFF;
+        background: #5e5e5e; /* fallback */
+        border-radius: 3px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    .close-btn:hover {
+        background: #000000;
+    }

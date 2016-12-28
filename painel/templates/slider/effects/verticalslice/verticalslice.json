@@ -1,0 +1,12 @@
+{
+    "name": "Vertical slices",
+    "description": "New slide is revealed as vertical slices from bottom up",
+    "effect": {
+        "bars": {
+            "type": "input",
+            "def": "10",
+            "description": "How much vertical bars use",
+            "name": "Bars count"
+        }
+    }
+}

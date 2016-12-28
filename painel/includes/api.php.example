@@ -1,0 +1,7 @@
+<?php
+/**
+ * Sample HTTP Basic AUTH API config file.
+ * Rename to api.php, update username and password below to random string.
+ */
+$api_username = "RANDOM_STRING";
+$api_password = "RANDOM_STRING";

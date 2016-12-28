@@ -1,0 +1,1 @@
+{include file="`$customfiledir`client_list.tpl"}

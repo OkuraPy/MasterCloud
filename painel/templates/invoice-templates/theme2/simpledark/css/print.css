@@ -1,0 +1,23 @@
+
+/* Print */
+
+body {
+background: none;
+font-family: Arial, sans-serif;
+}
+
+.status {
+display: none;
+}
+
+.nav {
+display: none;
+}
+
+.overlay-bg {
+display: none;}
+
+#backlink {
+display: none;
+}
+

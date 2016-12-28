@@ -1,0 +1,12 @@
+{
+    "name": "Blinds",
+    "description": "Simple vertical blinds-like effect",
+    "effect": {
+        "bars": {
+            "type": "input",
+            "def": "10",
+            "description": "How much vertical bars to use in blinds",
+            "name": "Bars count"
+        }
+    }
+}

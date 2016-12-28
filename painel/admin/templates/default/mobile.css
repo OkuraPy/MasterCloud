@@ -1,0 +1,126 @@
+
+@media(max-width: 1150px) {
+    #search_form_container input {
+        width: 100px;
+    }
+    #search_form_container small {
+        display: none;
+    }
+}
+@media(max-width: 900px) {
+
+    .logoLeftNav {
+        margin: 0 0 5px 0
+    }
+    #bodycont {
+        border: none;
+        padding: 0;
+    }
+    .bordered {
+        overflow: auto;
+    }
+    #body-content > table {
+        position: relative
+    }
+    #body-content > table,
+    #dashboard-table > table,
+    #body-content > table > tbody,
+    #dashboard-table > table > tbody,
+    #body-content > table > tbody > tr,
+    #dashboard-table > table > tbody > tr,
+    #body-content > table > tbody > tr > td,
+    #dashboard-table > table > tbody > tr > td{
+        display: block;
+    }
+    #dashboard-table > table > tbody > tr > td{
+        padding: 0!important;
+        width: auto!important;
+    }
+    #hider {
+        padding-top: 20px;
+    }
+    #hider2{
+        line-height: 13px;
+    }
+    .cmd-root .leftNav{
+        display: none!important
+    }
+    .leftNav {
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 19px;
+        left: 1px;
+        line-height: 18px;
+        background:#6694e3;
+    }
+    .leftNav::before{
+        content: "";
+        display: block;
+        float: right;
+        width: 0;
+        height:0;
+        border: 4px solid transparent;
+        border-top-color: white;
+        margin: 8px 5px 0 0;
+    }
+    .leftNav a {
+        pointer-events: none;
+        color: white;
+    }
+    .leftNav:hover,
+    .leftNav.hover {
+        height: auto;
+        background: white;
+        box-shadow: 1px 1px 3px #B0B0B0;
+        z-index: 9999;
+    }
+    .leftNav:hover a,
+    .leftNav.hover a {
+        pointer-events: auto;
+        color: #2a5db0;
+    }
+    .leftNav:hover a.selected,
+    .leftNav.hover a.selected{
+        color: #fff;
+    }
+    .newhorizontalnav{
+        margin-top: 18px;
+    }
+    #adminpromo {
+        display: block;
+        position: static!important;
+    }
+    #adminpromo #promo{
+        width: 100%;
+        text-align: center;
+    }
+    #adminpromo #promo a{
+        display: inline;
+    }
+    .subjectline,
+    .subjectlineth{
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    .subjectline *{
+        display: inline;
+    }
+    #body-content a.menuitm{
+        border-radius: 2px!important;
+        border: solid 1px #b0b0b0!important;
+        margin: 2px 1px;
+    }
+}
+
+@media(max-width: 680px) {
+    #body-content {
+        padding: 0;
+        margin: 0;
+    }
+    #search_form_container{
+        display: none;
+    }
+}

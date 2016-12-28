@@ -1,0 +1,105 @@
+{
+     "general": {
+       "autoplay": {
+           "type": "select",
+           "name": "Auto Play",
+           "description": "Choose if slider should begin automation automatically",
+           "def": "true",
+           "values": ["true","false"]
+       },
+       "startdelay":  {
+           "type": "input",
+           "name": "Auto Play delay",
+            "unit": "ms",
+           "description": "How long to wait until auto-play start",
+           "def": "200"
+       },
+       "keyboard":  {
+           "type": "select",
+           "name": "Keyboard control",
+           "description": "Select if right/left arrow should control slides",
+           "def": "false",
+           "values": ["true","false"]
+       },
+       "loop":  {
+           "type": "select",
+           "name": "Loop slideshow",
+           "description": "Should slidshow start from beginning after reaching end",
+           "def": "true",
+           "values": ["true","false"]
+       },
+       "pauseonhover": {
+           "type": "select",
+           "name": "Pause on mouseover",
+           "description": "Pause slideshow if mouse enters slider area",
+           "def": "true",
+           "values": ["true","false"]
+       },
+       "width":  {
+           "type": "input",
+           "name": "Slider width",
+            "unit": "px",
+           "description": "Force slider width to this value, leave blank for auto-adjust (depending on slider images)",
+           "def": ""
+       },
+       "height":  {
+           "type": "input",
+           "name": "Slider height",
+            "unit": "px",
+           "description": "Force slider height to this value, leave blank for auto-adjust (depending on slider images)",
+           "def": ""
+       },
+       "scaleimages": {
+           "type": "select",
+           "name": "Scale slider images",
+           "description": "Whether to scale images in slides to fit slider forced resolution (width, height)",
+           "def": "false",
+           "values": ["false","true"]
+       }
+    },
+    "style": {
+       "captionstyle": {
+           "type": "select",
+           "name": "Caption style",
+           "description": "Select where captions should appear on individual slides (none=dont show captions)",
+           "def": "bottom",
+           "values": ["bottom","right-wide","left-wide","top","none"]
+       },
+       "showdirection": {
+            "type": "select",
+            "name": "Show prev/next controls",
+            "def": "true",
+            "values": ["true","false"]
+       },
+       "showpagination": {
+            "type": "select",
+            "name": "Show pages control",
+            "def": "true",
+            "values": ["true","false"]
+       }
+    },
+    "effect": {
+       "captioneffect": {
+           "type": "select",
+           "name": "Caption effect",
+           "description": "Choose if caption should have its own show/hide effect",
+           "def": "none",
+           "values": ["none","fade","slide"]
+       },
+        "slidedisplaytime": {
+            "type": "input",
+            "unit": "ms",
+            "def": "3000",
+            "description": "How long individual slide should be displayed",
+            "name": "Slide display time"
+        },
+        "effecttime": {
+            "type": "input",
+            "unit": "ms",
+            "def": "300",
+            "description": "How long animation shoud take? Lower = faster animation",
+            "name": "Animation speed"
+
+        }
+    }
+}

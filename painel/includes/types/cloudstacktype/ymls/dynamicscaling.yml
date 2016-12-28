@@ -1,0 +1,19 @@
+type: select
+name: 'VM Scaling'
+key: cf_memory
+variable: dynamicscaling
+description:
+category: server
+options: 2
+premade: 1
+items:
+  -
+    name: Standard VM Scaling
+    variable_id: 0
+    pricing: 0
+  -
+    name: Dynamic VM Scalling
+    variable_id: 1
+    m: 1.00
+    pricing: 1
+    paytype: Regular

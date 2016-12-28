@@ -1,0 +1,2 @@
+{foreach from=$c.items item=cit}
+<input name="custom[{$kk}]"  value="{$cit.id}" type="radio" {if $c.values[$cit.id]}checked="checked"{/if}/> {$cit.name} {if $cit.price}({$cit.price|price:$currency:true:$forcerecalc}){/if}<br/>{/foreach}

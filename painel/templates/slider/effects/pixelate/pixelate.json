@@ -1,0 +1,25 @@
+{
+    "name": "Pixelate",
+    "description": "Remove old image by pixelating it out in random or organised order",
+    "effect": {
+        "rows": {
+            "type": "input",
+            "def": "5",
+            "description": "How many rows use in pixelization",
+            "name": "Pixel rows"
+        },
+        "columns": {
+            "type": "input",
+            "def": "10",
+            "description": "How many columns use in pixelization (note, more columns=slower processing)",
+            "name": "Pixel columns"
+        },
+        "random": {
+            "type": "select",
+            "name": "Randomize pixels order",
+            "description": "Should pixels dissapear in order or randomly",
+            "def": "true",
+            "values": ["true","false"]
+       }
+    }
+}

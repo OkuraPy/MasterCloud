@@ -1,0 +1,29 @@
+
+
+@media screen and (max-width: 1280px){
+	
+	.affiliates-box .well-info p {
+		width:100%;
+		display:block;
+		text-align:left !important;	
+	}
+	
+}
+
+@media screen and (max-width: 1024px){
+	
+	.left-60, .right-40 {
+		width:100%;
+		float:none;
+	}
+	.right-40 {
+		margin-top:40px;
+	}
+	.client-column {
+		width:100%;
+	}
+	.column-m {
+		margin-left:0;
+	}
+	
+}

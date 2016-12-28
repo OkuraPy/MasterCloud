@@ -1,0 +1,1 @@
+{include file='cart_smartwizard/cart.summary.tpl'}

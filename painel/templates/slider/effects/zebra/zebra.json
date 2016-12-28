@@ -1,0 +1,19 @@
+{
+    "name": "Zebra",
+    "description": "New slide is revealed as zebra stripes, in random or organised order",
+    "effect": {
+        "bars": {
+            "type": "input",
+            "def": "20",
+            "description": "How much vertical bars to use in zebra",
+            "name": "Bars count"
+        },
+        "random": {
+            "type": "select",
+            "name": "Randomize bars order",
+            "description": "Should bars dissapear in order or randomly",
+            "def": "false",
+            "values": ["true","false"]
+       }
+    }
+}

@@ -1,0 +1,280 @@
+
+/* Background pattern from subtlepatterns.com */
+
+body {
+	background: url(../img/bg.png) repeat;
+	font-family: Arial;
+	}
+	
+.space {
+	width: 100%;
+	height: 40px;
+	}
+	
+.ribbon {
+	background: url(../img/ribb.png) no-repeat;
+	background-position: center;
+	width: 100%;
+	}
+	
+.status {
+float: right;
+width: 150px;
+padding-top: 25px;
+height: 150px;
+background-position: top-right;
+color: #FFF;
+font-weight: bold;
+}
+
+.Paid {
+background: url(../img/paid.png) no-repeat;
+}
+
+.Unpaid {
+background: url(../img/unpaid.png) no-repeat;
+}
+
+.Cancelled{
+background: url(../img/cancelled.png) no-repeat;
+}
+
+.Refunded {
+background: url(../img/refunded.png) no-repeat;
+}
+
+
+img {
+border: none;
+}
+
+.rotation {
+/* Safari */
+font-size: 12pt;
+-webkit-font-smoothing: antialiased;
+-webkit-transform: rotate(45deg);
+
+/* Firefox */
+-moz-transform: rotate(45deg);
+
+/* IE */
+-ms-transform: rotate(45deg);
+
+/* Opera */
+-o-transform: rotate(45deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+text-align: center;
+padding-left: 60px;}
+	
+.container {
+	width: 980px;
+	margin: 0 auto ;
+	margin-bottom: 50px;
+	}
+	
+.effect
+{
+     
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+.ico {
+padding: 15px 20px 8px 20px;
+vertical-align: middle;
+}
+
+#leftmenu {
+	float: left;
+	width: 80px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+	
+.invoice-content {
+	width: 900px;
+	float: left;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+	background: #FFF;
+    -webkit-border-radius: 3px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 3px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+	}
+	
+
+a {
+	text-decoration: none;
+	}
+
+
+.cbp-vimenu {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+	color: #777777;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-size: 8pt;
+	line-height: 12pt;
+	text-align: center;
+}
+
+.cbp-vimenu li {
+	height: 80px;
+	border-bottom: 1px solid #bbbbbb;
+	}
+
+.cbp-vimenu li a {
+    display: block;
+	font-size: 8pt;
+	line-height: 12pt;
+	height: 80px;
+	text-decoration: none;
+    text-align: center;
+	background: #ababab;
+    color: #fff;
+    position: relative;
+
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+}
+
+
+ .cbp-vimenu li:first-child a {
+    background: #fff;
+    color: #777777;
+	}
+	
+.cbp-vimenu li a:hover {
+    background: #d7401e;
+    color: #fff;
+}
+ 
+/* class for current item */
+.cbp-vimenu li a:active {
+    background: #fff !important;
+    color: #47a3da;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+ 
+.cbp-vimenu li a:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 0em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+    -webkit-font-smoothing: antialiased;
+}
+ 
+
+ 
+
+ 
+/* Example for media query (depends on total height of menu) */
+@media screen and (max-height: 34.9375em) { 
+ 
+    .cbp-vimenu {
+        font-size: 70%;
+    }
+ 
+}
+
+
+clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+
+.overlay-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.75);
+}
+    .overlay-content {
+        background: #fff;
+		text-align: left;
+        padding: 1%;
+        width: 40%;
+        position: relative;
+        top: 15%;
+        left: 50%;
+        margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.9);
+    }
+ 
+    .close-btn {
+        cursor: pointer;
+        border: 1px solid #d7401e;
+        padding: 2% 5%;
+		color: #FFF;
+        background: #d7401e; /* fallback */
+        border-radius: 3px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    .close-btn:hover {
+        background: #e54521;
+    }
+	
+	#backlink {
+	text-align: center;
+	margin-bottom:22px;
+	margin-top: 30px;}
+	
+	
+	#backlink a{
+	text-align: center;
+	color: #515151;
+	}
+	
+	#backlink a:hover {
+	color: #d7401e;
+	}

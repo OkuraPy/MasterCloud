@@ -1,0 +1,62 @@
+---
+name: Canada registered business
+description: >
+  For CA based companies, profile will automatically set everything required to run legal,
+  successfull Canadian Hosting company (including valid GST/HST taxes)
+settings:
+  DateFormat: DD/MM/YYYY
+  ISOCurrency: CAD
+  CurrencyCode: 
+  CurrencySign: $
+  UserLanguage: english
+  UserCountry: CA
+  ContinueInvoices: on
+  AttachPDFInvoice: on
+  CCChargeAuto: on
+  CCDaysBeforeCharge: 1
+  CCAttemptOnce: off
+  CCRetryForDays: 3
+  AutoRegDomains: on
+  1DomainReminder: 50
+  2DomainReminder: 30
+  3DomainReminder: 30
+  4DomainReminder: 10
+  5DomainReminder: 5
+  EnableTax: on
+  CompoundL2: off
+  TaxLateFee: on
+  TaxDomains: on
+  TaxType: exclusive
+tax:
+  -
+    name: GST
+    level: 1
+    rate: 12
+    countries:
+      - CA
+    state: British Columbia
+  -
+    name: GST
+    level: 1
+    rate: 13
+    countries:
+      - CA
+    state: Ontario, New Brunswick, Newfoundland
+  -
+    name: GST
+    level: 1
+    rate: 15
+    countries:
+      - CA
+    state: Nova Scotia
+  -
+    name: GST
+    level: 1
+    rate: 5
+    countries:
+      - CA
+    state: Alberta,Manitoba,Northwest Territories,Nunavut,Prince Edward Island,Quebec,Saskatchewan,Yukon Territory
+plugins:
+   - state_province_select
+
+

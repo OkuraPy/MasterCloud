@@ -1,0 +1,8 @@
+type: "input"
+name: "Cloud name"
+key: "cf_network"
+variable: "cloudname"
+description:
+category: "network"
+options: "3"
+premade: 1

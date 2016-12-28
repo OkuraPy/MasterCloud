@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8" />
+
+<script src="../jquery.js"></script>
+<script src="../hbslider.js"></script>
+<script src="../effects/cover/cover.js"></script>
+<script src="../effects/fade/fade.js"></script>
+<script src="../effects/verticalslice/verticalslice.js"></script>
+<script src="../effects/verticalslicedown/verticalslicedown.js"></script>
+<script src="../effects/zebra/zebra.js"></script>
+<script src="../effects/pixelate/pixelate.js"></script>
+<script src="../effects/blinds/blinds.js"></script>
+<script src="../effects/none/none.js"></script>
+
+<link rel="stylesheet" href="../styles/basic/basic.css">
+<link rel="stylesheet" href="../styles/bordered/bordered.css">
+<script src="../styles/bordered/bordered.js"></script>
+<link rel="stylesheet" href="../styles/plasma/plasma.css">
+<script src="../styles/plasma/plasma.js"></script>
+<style>#hbs-demo .hbs-slider {
+    width:960px;
+    height:408px;
+}
+#hbs-demo .hbs-container {
+    margin:40px auto;
+}
+#hbs-demo {
+    background: url('tiles1.jpg');
+}</style>
+
+<title>HB Slider Playground</title>
+
+</head>
+<body id="hbs-demo">
+
+    <div id="slider">
+        <div><img src="slide_1.jpg" alt="<h1>This image has a caption in alt attribute</h1>" /></div>
+        <div><img src="slide_2.jpg" alt="slide 2 example" /></div>
+        <img src="slide_3.jpg"  />
+    </div>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $('#slider').hbslider({
+                effect: 'explode',
+                random:true,
+                keyboard: true,
+                mousescroll: true,
+                pauseonhover: false,
+                style: 'plasma',
+                captionstyle:'right-wide'
+            });
+        });
+
+    </script>
+</body>
+</html>

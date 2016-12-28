@@ -1,0 +1,234 @@
+﻿<style type="text/css"><!--
+body {
+font-family: 'Lato', sans-serif;
+font-size: 9pt;
+}
+
+.top {
+color: #454545;
+padding-top: 30px;
+text-align: center;
+padding-bottom: 40px;
+}
+
+
+.hr {
+  height: 0px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f7f5f5;
+  font-size: 1px;
+  width: 50%;
+  padding-top: 12px;
+}
+
+.2hr {
+  height: 0px;
+  border-bottom: 1px solid #f7f5f5;
+  font-size: 1px;
+  width: 200px;
+  padding-top: 12px;
+ }
+ 
+.from {
+padding-left: 20px;
+}
+
+.to {
+padding-left: 80px;
+}
+
+.to,
+.from {
+width: 40%;
+font-size: 12pt;
+line-height: 18pt;
+float: left;
+color: #606060;
+}
+
+h1 {
+font-size: 20pt;
+color: #3178b2;
+margin: 0px;
+line-height: 28pt;
+font-weight: bold;
+}
+
+h2 {
+font-size: 14pt;
+font-weight: bold;
+}
+
+.transtab td {
+color: #FFF;
+padding: 11px 16px 11px 16px;
+text-align: center;
+}
+
+.sum td{
+font-size: 11pt;
+padding: 6px 0px 6px 0px;
+}
+
+.table-content {
+float: left;
+margin-top: 50px;
+width: 900px;
+margin-left: 30px;
+
+}
+
+table {
+border-spacing:0;
+border-collapse:collapse;
+}
+
+.tab {
+width: 900px;
+margin-bottom: 30px;
+font-size: 10pt;
+}
+
+.tab th {
+background: #3178b2;
+color: #FFF;
+padding: 15px 10px 15px 15px;
+text-align: left;
+}
+
+.tab td{
+padding: 15px 10px 15px 15px;
+}
+
+.tab tr:nth-child(even) {
+    background-color: #f7f8f8;
+}
+
+
+
+.tfirst {
+width: 45%;
+}
+
+.tsecond {
+width: 15%;
+}
+
+.third {
+width: 10%;
+}
+
+.tforth {
+width: 20%;
+}
+
+.notes {
+width: 55%
+display:inline-block;
+float: left;
+color: #626262;
+padding: 5px 10px 15px 15px;
+}
+
+.summary {
+width: 40%;
+float: right;
+}
+
+.transaction {
+margin-top: 60px;
+background: #3178b2;
+color: #dadada;
+width: 100%;
+float: left;
+text-align: center;
+padding-top: 5px;
+vertical-align: middle;
+}
+
+.footer {
+background: #296698;
+color: #fff;
+width: 100%;
+float: left;
+text-align: center;
+height: 45px;
+vertical-align: middle;
+}
+--></style>
+<div class="top"><span style="font-size: 18pt;">{$lang.invoice} {$invoice.id}</span><br />
+<div class="hr">&nbsp;</div>
+<br /> {$lang.invoice_date} {$invoice.date}</div>
+<div class="to"><span style="color: #d5d5d5;">{$lang.invoice_from}</span>
+<h1>Your Business Name</h1>
+Enter your name<br /> Ender your address</div>
+<div class="from"><span style="color: #d5d5d5;">{$lang.invoice_to}</span>
+<h1>{$client.companyname}</h1>
+{$client.firstname} {$client.lastname}<br /> {$client.address1} {$client.address2}<br /> {$client.city}, {$client.state} {$client.postcode}<br /> {$client.country}</div>
+<div class="table-content">
+<table class="tab" style="border: 1px solid #f1f1f1;">
+<tbody>
+<tr><th class="tfirst">{$lang.invoice_desc}</th><th class="tsecond">{$lang.unitcost}</th><th class="third">{$lang.qty}</th><th class="tforth">{$lang.price}</th></tr>
+<tr>
+<td class="tfirst">{$item.description}</td>
+<td class="tsecond">{$item.amount}</td>
+<td class="third">{$item.qty}</td>
+<td class="tforth">{$item.linetotal}</td>
+</tr>
+</tbody>
+</table>
+<div class="notes">
+<h2>{if $invoice.notes}Additional notes{/if}</h2>
+{$invoice.notes}</div>
+<div class="summary">
+<table class="sum">
+<tbody>
+<tr style="border-bottom: 1px solid #f5f5f5;">
+<td style="padding-right: 58px;">
+<h2>{$lang.total}</h2>
+</td>
+<td>
+<h2><span style="color: #3178b2;">{$invoice.total}</span></h2>
+</td>
+</tr>
+<tr>
+<td style="padding-right: 38px;">{$lang.subtotal}</td>
+<td>{$invoice.subtotal}</td>
+</tr>
+<tr>
+<td style="padding-right: 38px;">{$lang.credit}:</td>
+<td>{$invoice.credit}</td>
+</tr>
+<tr>
+<td style="padding-right: 38px;">{$lang.tax} ({$invoice.taxrate}%):</td>
+<td>{$invoice.tax}</td>
+</tr>
+<tr>
+<td style="padding-right: 38px;">{$lang.tax} ({$invoice.taxrate2}%):</td>
+<td>{$invoice.tax2}</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="transaction"><center>
+<table class="transtab">
+<tbody>
+<tr>
+<td><strong>{$lang.trans_date}</strong></td>
+<td class="pad"><strong>{$lang.trans_gtw}</strong></td>
+<td class="pad"><strong>{$lang.trans_id}</strong></td>
+<td class="pad"><strong>{$lang.trans_amount}</strong></td>
+<td class="pad"><strong>{$lang.balance}</strong></td>
+</tr>
+<tr>
+<td>{$transaction.date}</td>
+<td class="pad">{$transaction.module}</td>
+<td class="pad">{$transaction.trans_id}</td>
+<td class="pad">{$transaction.amount}</td>
+<td class="pad"><strong>{$transbalance}</strong></td>
+</tr>
+</tbody>
+</table>
+</center></div>
+<div class="footer"><br />Enter footer text</div>

@@ -1,0 +1,345 @@
+<style type="text/css">
+/* Layout */
+
+
+h5 {
+color: #676767;
+font-weight: bold;
+font-size: 14pt;
+padding-left: 55px;
+margin-top: 15px;
+}
+
+.info {
+color: #c3c3c3;
+padding: 35px 25px 15px 55px;
+font-size: 11pt;
+width: 600px;
+}
+
+.invoice-data {
+margin-top: 25px;
+margin-bottom: 35px;
+}
+
+.supplier {
+float: left;
+padding-right: 100px;
+
+}
+
+.invoiceto {
+float: left;
+}
+
+.supplier,
+.invoiceto {
+color: #9c9c9c;
+font-size: 10pt;
+line-height: 16pt !important;;
+padding-left: 55px;
+width: 250px;
+}
+
+
+.invoice-top {
+color: #9c9c9c;
+margin-bottom: 20px;
+border-bottom: 1px solid #f0f0f0;
+}
+
+.summary  {
+margin-bottom: 30px;
+color: #3a3a3a;
+}
+
+.sum {
+color: #3a3a3a;
+text-align: left;
+margin-top: 25px;
+font-size: 9pt !important;
+margin-bottom: 0px;
+padding-right: 35px;
+padding-left: 35px;
+}
+
+
+.sum td{
+border: 1px solid #f0f0f0;
+padding-right: 55px;
+padding-left: 55px;
+padding-bottom: 10px;
+padding-top: 10px;
+color: #676767;
+font-size: 9pt !important;
+line-height: 15pt;
+}
+
+.table-summary {
+padding-right: 10%;
+padding-left: 10%;
+}
+
+.table-summary  td{
+color: #dddddd;
+text-align: right;
+padding-left: 50px;
+}
+
+.invoice-date {
+float: left;
+width: 100%;
+}
+
+.totaldue{
+background: #454545;
+color: #dddddd;
+font-size: 12pt;
+width: 100%;
+float: right;
+margin-top: 30px;
+padding-bottom: 20px;
+}
+
+.notes {
+color: #676767;
+padding: 5px 55px 5px 55px;
+border-top: 1px solid #f0f0f0;
+border-bottom: 1px solid #f0f0f0;
+font-size: 10pt;
+}
+
+#footer {
+color: #676767;
+padding: 35px 55px 15px 55px;
+text-align: right;
+font-size: 8pt;
+}
+
+/* Tables */
+
+.tab {
+margin-top: 15px;
+width: 96%;
+}
+
+table {
+    border-collapse: collapse;
+	color: #4c4c4c;
+	font-size: 10pt;
+	line-height: 18pt;
+}
+th, td {
+    padding: 0;
+}
+
+th {
+font-family: Arial;
+text-transform: uppercase;
+border-bottom: 1px solid #fff !important;
+font-weight: bold;
+color: #4c4c4c;
+font-size: 9pt;
+}
+
+td {
+}
+
+
+.tfirst {
+background: #f8f8f8;
+text-align: left;
+padding: 18px 12px 18px 55px;
+border-bottom: 1px solid #ebebeb;
+width: 45%;}
+
+.tsecond {
+width: 15%;
+padding: 12px;
+text-align: center;
+border-bottom: 1px solid #dfdfdf;
+background: #ebebeb;
+}
+
+.third {
+width: 10%;
+background: #e4e4e4;
+text-align: center;
+padding: 12px;
+border-bottom: 1px solid #d8d8d8;
+}
+
+.tforth {
+padding: 18px;
+background:#d7401e;
+width: 30%;
+text-align: right;
+color: #FFF;
+border-bottom: 1px solid #df4320;
+}
+
+/* Styles */
+
+a {
+	text-decoration: none;
+	}
+	
+h1 {
+font-size: 18pt;
+margin: 6px 0px 6px 0px;
+font-weight: bold;
+color: #5c5c5c;
+padding: 0px 0px 0px 0px;
+line-height: none;
+}
+
+h2 {
+font-size: 14pt;
+color: #5c5c5c;
+font-weight: bold;
+}
+
+h2 {
+font-size: 12pt;
+color: #cccccc;
+font-weight: bold;
+}
+
+img{
+vertical-align: top;
+padding-right: 10px;
+opacity: 0.8;
+}
+
+.line {
+height: 1px;
+background: #eeeeee;
+width: 550px;
+margin-left: 55px;
+margin-bottom: 20px;
+}
+
+.hr {
+height: 1px;
+margin-top: 5px;
+margin-bottom: 10px;
+opacity: 0,7;
+background: #606060;
+width: 100%;
+}
+
+clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+</style>
+<div class="info">
+<table class="invoice-top">
+<tbody>
+<tr>
+<td width="175px">{$lang.invoice} {$invoice.id}</td>
+<td>{$lang.invoice_date} {$invoice.date}</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="invoice-data">
+<div class="supplier"><strong>{$lang.invoice_from}</strong>
+<h1>My Business</h1>
+Enter your address...</div>
+<div class="invoiceto"><strong>{$lang.invoice_to}</strong>
+<h1>{$client.companyname}</h1>
+<p>{$client.firstname} {$client.lastname}<br /> {$client.address1} {$client.address2}<br /> {$client.city}, {$client.state} {$client.postcode}<br /> {$client.country}</p>
+<br /><br /></div>
+</div>
+<table class="tab">
+<tbody>
+<tr><th class="tfirst">{$lang.invoice_desc}</th><th class="tsecond">{$lang.unitcost}</th><th class="third">{$lang.qty}</th><th class="tforth">{$lang.price}</th></tr>
+<tr>
+<td class="tfirst">{$item.description}</td>
+<td class="tsecond">{$item.amount}</td>
+<td class="third">{$item.qty}</td>
+<td class="tforth">{$item.linetotal}</td>
+</tr>
+</tbody>
+</table>
+<div class="totaldue clearfix">
+<table class="table-summary" style="margin-top: 15px; margin-right: 55px;" align="right">
+<tbody>
+<tr>
+<td>{$lang.subtotal}</td>
+<td>{$invoice.subtotal}</td>
+</tr>
+<tr>
+<td>{$lang.credit}:</td>
+<td>{$invoice.credit}</td>
+</tr>
+<tr>
+<td>{$lang.tax} ({$invoice.taxrate}%):</td>
+<td>{$invoice.tax}</td>
+</tr>
+<tr>
+<td>{$lang.tax} ({$invoice.taxrate2}%):</td>
+<td>{$invoice.tax2}</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<h3>{$lang.total}</h3>
+</td>
+<td>
+<h3>{$invoice.total}</h3>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary clearfix">
+<div class="invoice-date">
+<h5>{if $related_trans}{$lang.related_trans}{/if}</h5>
+<table class="sum" align="left">
+<tbody>
+<tr>
+<td><strong>{$lang.trans_date}</strong></td>
+<td><strong>{$lang.trans_gtw}</strong></td>
+<td><strong>{$lang.trans_id}</strong></td>
+<td><strong>{$lang.trans_amount}</strong></td>
+</tr>
+<tr>
+<td>{$transaction.date}</td>
+<td>{$transaction.module}</td>
+<td>{$transaction.trans_id}</td>
+<td>{$transaction.amount}</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>{$lang.balance}</strong></td>
+<td><strong>{$transbalance}</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="clearfix">&nbsp;</div>
+<div class="notes">{if $invoice.notes}<strong>Additional notes</strong>{/if}<br /><br /> {$invoice.notes}</div>
+<div id="footer">Enter footer text...</div>

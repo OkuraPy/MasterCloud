@@ -1,0 +1,195 @@
+<style type="text/css"><!--
+.from {
+padding-left: 50px;
+padding-right: 22px;
+}
+
+.to {
+padding-left: 22px;
+border-left: 1px solid #f2f2f2;
+}
+
+table {
+border-spacing:0;
+border-collapse:collapse;
+}
+
+.from,
+.to {
+float: left;
+vertical-align: text-top;
+width: 29%
+}
+
+.date {
+text-align: right;
+padding-top: 20px;
+vertical-align: text-top;
+padding-right: 40px;
+padding-bottom: 15px;
+font-size: 9pt;
+display: block;
+}
+
+p {
+line-height: 12px;
+}
+
+/* Tables */
+
+.productstable{
+width: 100%;
+}
+
+.space {
+width: 100%;
+height: 50px;
+float: left;
+}
+
+.products {
+margin-left: 16px;
+width: 97%;
+border: 0px;
+}
+
+.products th{
+color: #f9f9f9;
+font-size: 10pt;
+background: #323231;
+border: none;
+text-transform: uppercase;
+border: 0px;
+padding-left: 28px;
+text-align: left;
+height: 35px;
+}
+
+.products td {
+padding-left: 28px;
+height: 50px;
+border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table {
+}
+
+.transaction {
+background: #323231;
+color: #FFF;
+margin-left: 16px;
+width: 97%;
+}
+
+.foot {
+text-align: center;
+margin: 0 auto;
+width: 700px;
+}
+
+
+.products table, .products tr, .products th, .products td { 
+
+}
+
+.transtab td {
+color: #FFF;
+padding: 10px 15px 10px 15px; 
+}
+
+.tfirst {
+width: 35%;
+padding-left: 50px;
+}
+
+.tdfirst {
+margin-left: 15px !important;
+}
+
+.summary {
+padding-left: 80px;
+}
+--></style>
+<div class="date clearfix"><strong>{$lang.invoice} {$invoice.id}</strong> <br /> {$lang.invoice_date} {$invoice.date}</div>
+<div class="from">{$lang.invoice_from}<br />
+<h2>My Business Name</h2>
+My Name &amp; Surname<br /> My Business Address</div>
+<div class="to">{$lang.invoice_to}<br />
+<h2><span style="color: #2193da;">{$client.companyname}</span></h2>
+{$client.firstname} {$client.lastname}<br /> {$client.address1} {$client.address2}<br /> {$client.city}, {$client.state} {$client.postcode}<br /> {$client.country}</div>
+<div class="space"><br /><br /></div>
+<div class="productstable">
+<table class="products" style="margin-top: 60px;" border="0">
+<tbody>
+<tr><th class="tfirst">{$lang.invoice_desc}</th><th class="tsecond">{$lang.unitcost}</th><th class="third">{$lang.qty}</th><th class="tforth">{$lang.price}</th></tr>
+<tr>
+<td class="tdfirst">{$item.description}</td>
+<td>{$item.amount}</td>
+<td>{$item.qty}</td>
+<td>{$item.linetotal}</td>
+</tr>
+</tbody>
+</table>
+<br /><br /></div>
+<div class="total">
+<table class="summary" align="center">
+<tbody>
+<tr>
+<td>
+<p align="right">{$lang.subtotal}</p>
+</td>
+<td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e7e7e7;">{$invoice.subtotal}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p align="right">{$lang.credit}:</p>
+</td>
+<td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e7e7e7;">{$invoice.credit}</td>
+<td style="padding-left: 20px;">
+<h2><span style="color: #2193da;">{$lang.total}</span></h2>
+</td>
+</tr>
+<tr>
+<td>
+<p align="right">{$lang.tax} ({$invoice.taxrate}%):</p>
+</td>
+<td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e7e7e7;">{$invoice.tax}</td>
+<td style="padding-left: 20px;">
+<h2><span style="color: #2193da;">{$invoice.total}</span></h2>
+</td>
+</tr>
+<tr>
+<td>
+<p align="right">{$lang.tax} ({$invoice.taxrate2}%):</p>
+</td>
+<td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e7e7e7;">{$invoice.tax2}</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br /><br /></p>
+<div class="transaction">
+<table class="transtab" align="center">
+<tbody>
+<tr>
+<td><strong>{$lang.trans_date}</strong></td>
+<td><strong>{$lang.trans_gtw}</strong></td>
+<td><strong>{$lang.trans_id}</strong></td>
+<td><strong>{$lang.trans_amount}</strong></td>
+<td><strong>{$lang.balance}</strong></td>
+</tr>
+<tr>
+<td>{$transaction.date}</td>
+<td>{$transaction.module}</td>
+<td>{$transaction.trans_id}</td>
+<td>{$transaction.amount}</td>
+<td><strong>{$transbalance}</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p style="padding-left: 60px;"><strong>{if $invoice.notes}Additional notes{/if}</strong><br /><br /> {$invoice.notes}</p>
+<div class="foot"><span style="font-size: 8pt; color: #ababab;"> Enter footer text... </span></div>

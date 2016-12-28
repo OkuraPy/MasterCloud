@@ -1,0 +1,33 @@
+billing: 
+ emails:
+ payinvoice:
+ orders:
+ balance:
+ addfunds:
+   condition:'config:OfferDeposit:on'
+ creditcard:
+support: 
+  newticket:
+  tickets:
+  closeticket:
+  emails:
+misc: 
+  editmain:
+    important: 1
+  emails: 
+  editipaccess:
+    important: 1
+    condition: 'config:EnableClientScurity:on'
+  manageprofiles: 
+  affiliates:
+services:
+  full:
+    important: 1
+    displaygroup: misc
+    condition: 'smarty:services'
+domains:
+  full:
+    important: 1
+    displaygroup: misc
+    condition: 'smarty:domains'
+  

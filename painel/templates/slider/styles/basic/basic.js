@@ -1,0 +1,1 @@
+//for basic style declaration view hbslider.js

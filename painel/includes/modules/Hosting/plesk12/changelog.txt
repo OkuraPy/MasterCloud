@@ -1,0 +1,1 @@
+2015-04-30 Added option to mass-synchronize accounts from admin area (?cmd=plesk12)

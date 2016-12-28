@@ -1,0 +1,7 @@
+2015-04-30 VMs scale/upgrade removes old shared service offerings
+2015-05-29 Fixed php error occurring when server is unreachable
+2015-05-29 Fixed issue with disk creation if using non-integer values
+
+Help desk 
+Share By Heus/HeusTR 
+Bestblackhatforum.com & scriptznull.nl

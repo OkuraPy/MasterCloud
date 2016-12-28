@@ -1,0 +1,17 @@
+type: select
+name: 'Storage Tier'
+key: cf_hdd
+variable: storage_tier
+description:
+category: server
+options: 2
+premade: 1
+items:
+  -
+    name: Tier 1 Storage
+    variable_id: disk_size
+    pricing: 0
+  -
+    name: Tier 2 Storage
+    variable_id: tier2_disk_size
+    pricing: 0

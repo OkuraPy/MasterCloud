@@ -1,0 +1,83 @@
+.hbs-style-bordered {
+	box-shadow: 0px 3px 15px -5px #000;
+	-moz-box-shadow: 0px 3px 15px -5px #000;
+	-webkit-box-shadow: 0px 3px 15px -5px #000;
+}
+
+.hbs-style-bordered .bordered-frame {
+    display:block;
+	position: absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	border:solid 8px black;
+	z-index:9;
+	opacity:0.3;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+}
+.hbs-style-bordered .hbs-slider-prev,
+.hbs-style-bordered .hbs-slider-next {
+   background: url('arrows.png') no-repeat top left;
+    cursor:pointer;
+    font-size:0;
+    height: 35px;
+    left: -17px;
+    margin-top: -20px;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    width: 35px;
+    z-index:10;
+}
+.hbs-slider-prev:hover, .hbs-slider-next:hover {
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.hbs-style-bordered .hbs-slider-prev {
+    left: -17px;
+    right:auto;
+    background-position: 0px 0px;
+}
+.hbs-style-bordered .hbs-slider-prev.disabled,
+.hbs-style-bordered .hbs-slider-next.disabled {
+    display:none;
+}
+.hbs-style-bordered .hbs-slider-next {
+    right: -17px;
+    left:auto;
+    background-position: 0px -35px;
+}
+
+
+.hbs-style-bordered  ul.hbs-slider-paginate {
+    display: block;
+    right: 30px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:20px;
+    z-index:10;
+}
+
+.hbs-style-bordered  ul.hbs-slider-paginate li {
+    background: url("bullet.png") no-repeat 0px 0px;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font-size: 0;
+    height: 10px;
+    margin: 8px 3px;
+    padding: 0;
+    position: relative;
+    width: 10px;
+}
+
+.hbs-style-bordered  ul.hbs-slider-paginate li.active {
+    background-position: 0px -10px;
+
+}

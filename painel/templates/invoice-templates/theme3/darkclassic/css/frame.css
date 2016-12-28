@@ -1,0 +1,191 @@
+/* Pattern from subtlepatterns.com */
+
+body {
+	background: url(../img/bg.png) repeat;
+	font-family: 'Open Sans', sans-serif;
+	color: #4f4f4f;
+	font-size: 10pt;
+	}
+	
+h2 {
+font-size: 14pt;
+font-weight: bold;
+line-height: 28pt;
+margin: 0px;
+padding: 0px;
+}
+
+a {
+text-decoration: none;
+color: #FFF;
+}
+
+
+.container {
+width: 960px;
+margin: 0 auto;
+}
+
+.topbg {
+width: 824px;
+height: 21px;
+background: url(../img/top.png) no-repeat;
+float: left;
+}
+
+.bottombg {
+width: 824px;
+height: 36px;
+background: url(../img/bottom.png) no-repeat;
+float: left;
+}
+
+.invoice-inside {
+width: 824px;
+background: url(../img/mid.png) repeat-y;
+min-height: 300px;
+float: left;
+padding-top: 20px;
+}
+
+.rmenu {
+list-style: none;
+padding-left: 0px;
+line-height: 46px;
+color: #fff;
+font-size: 10pt;
+font-weight: bold;
+padding: 0px !important;
+margin: 0px !important;
+}
+
+.rmenu li {
+border-bottom: 1px solid #2d2d2d;
+padding-left: 11px;
+background: #323232;
+}
+
+a {
+text-decoration: none;
+}
+
+.rmenu li a {
+border-bottom: 1px solid #2d2d2d;
+color: #fff;
+border-bottom: none;
+text-decoration: none;
+}
+
+.rmenu li a:hover {
+color: #2193da;
+}
+
+.status {
+
+}
+
+.payoption {
+line-height: 12pt;
+font-size: 9pt;
+width: 110px;
+font-weight: normal;
+}
+
+#backlink {
+text-align: center;
+padding-top: 20px;
+}
+
+#backlink a {
+color: #FFF;
+}
+
+#backlink a:hover {
+color: #2193da;
+
+}
+
+.Paid {
+background: #168e0a !important;
+}
+
+.Unpaid {
+background: #a71f00 !important;
+}
+
+.Refunded {
+background: #1175b3 !important;
+}
+
+.Cancelled {
+background: #1d1d1d !important;
+}
+
+
+.status {
+background: #a71f00;
+padding-top: 0px;
+margin-top: 0px;
+}
+
+
+.top {
+height: 60px;
+width: 100%;
+}
+
+
+
+.invoice-rightmenu {
+width: 136px;
+display: inline-block;
+margin: 0px;
+padding: 0px;
+float: left;
+}
+
+
+.effect
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect:before, .effect:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+
+clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}

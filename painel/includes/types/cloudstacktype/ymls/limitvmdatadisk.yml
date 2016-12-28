@@ -1,0 +1,16 @@
+type: slider
+name: 'VM Disk size [GB] - config'
+key: cf_hdd
+variable: limitvmdatadisk
+description: This is admin only field, it controls storage slider when creating new VM.
+category: server
+options: 4
+config:
+  minvalue: 0
+  maxvalue: 500
+  step: 5
+  initialval: 0
+items:
+  -
+    name:
+    pricing: 0
